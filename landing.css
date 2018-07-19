@@ -1,5 +1,5 @@
 body {
-	background-color: #7F0037FF;
+	/*background-color: #7F0037FF;*/
 	display: grid;
 	grid-template-rows: auto auto auto auto auto;
 	grid-template-areas: "header"
@@ -91,6 +91,13 @@ a {
 #nav-bar p:hover {
 	background-color: #7F0037FF;
 }
+
+/*************MAIN***************/
+
+main {
+	background-color: #7F0037FF;
+}
+
 /*************************  VIDEO STYLING ************************/
 #video {
 	grid-area: video;
