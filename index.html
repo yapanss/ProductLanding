@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Landing Page</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./landing.css">
+	<!-- <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet"> -->
+</head>
+<body>
+
+<header id="header">
+	<div id="brand">
+		<div id="image">
+			<img src="./pizza-logo.png" alt="logo" id="header-img">
+		</div>
+		<div id="title">
+			<h1>Pizza Masters</h1>
+			<h2>Delicious and Hot, Pizza Just for You</h2>
+		</div>
+	</div>
+	
+	<nav id="nav-bar">
+		<!-- <p><a class="nav-link" href="#">Text</a></p> -->
+		<p><a class="nav-link" href="#video">Presentation</a></p>
+		<p><a class="nav-link" href="#pricing">Pricing</a></p>
+		<p><a class="nav-link" href="#footer">Contact</a></p>
+	</nav>
+</header>
+
+<main>
+	<section id="video">
+		<div>
+			<iframe height="450" src="https://www.youtube.com/embed/0qmgiUl9smw?controls=0">
+			</iframe>
+		</div>
+		
+	</section>
+	<section id="pricing">
+		<div class="product" id="product1">
+			<div class="product-text" id="product-text1">
+				<h2 class="product-text-name">Afghani Tikka</h2>
+				<p class="product-text-description">Topped with Afghani Tikka chunks and onion on a special creamy pizza sauce</p>
+			</div>
+			<div class="product-price" id="price1">
+				<h3>$1</h3>
+			</div>
+			<img src="./pizza1.png" height="auto" width="100%" id="im1">
+		</div>
+		<div class="product" id="product2">
+			<div class="product-text" id="product-text2">
+				<h2 class="product-text-name">CARNIVORE</h2>
+				<p class="product-text-description">A feast of pepperoni, roasted turkey strips and smoky crispy beef</p>
+			</div>
+			<div class="product-price" id="price2">
+				<h3>$2</h3>
+			</div>
+			<img src="./pizza2.png" height="auto" width="100%" id="im2">
+		</div>
+		<div class="product" id="product3">
+			<div class="product-text" id="product-text3">
+				<h2 class="product-text-name">FAJITA SICILIAN</h2>
+				<p class="product-text-description">TA delicious blend of fajita chicken, onions, green peppers, green chilies and lots of cheese</p>
+			</div>
+			<div class="product-price" id="price3">
+				<h3>$3</h3>
+			</div>
+			<img src="./pizza3.png" height="auto" width="100%" id="im3">
+		</div>
+		<div class="product" id="product4">
+			<div class="product-text" id="product-text4">
+				<h2 class="product-text-name">SWEET CHICK</h2>
+				<p class="product-text-description">A mouth-watering combination of chicken strips, smoky crispy beef & Peruvian cherry peppers</p>
+			</div>
+			<div class="product-price" id="price4">
+				<h3>$4</h3>
+			</div>
+			<img src="./pizza4.png" height="auto" width="100%" id="im4">
+		</div>
+	</section>
+
+								<!-- FORM -->
+
+	<section id="form_section">
+		<form action="https://www.freecodecamp.com/email-submit" id="form">
+			<label>let's keep in touch</label>
+			<input type="email" name="email" id="email" pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)+$" placeholder="Enter a valid email" required>
+			<button id="submit">submit</button>
+		</form>
+	</section>
+</main>
+
+<footer id="footer">Designed by @nnoux</footer>
+
+<script src="./landing.js"></script>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

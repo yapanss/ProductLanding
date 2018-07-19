@@ -1,0 +1,393 @@
+body {
+	background-color: #7F0037FF;
+	display: grid;
+	grid-template-rows: auto auto auto auto auto;
+	grid-template-areas: "header"
+						 "video"
+						 "pricing"
+						 "form"
+						 "footer";
+}
+
+header {
+	position: sticky;
+	top: 0;
+	grid-area: header;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-areas: "brand navLinks";
+	background-color:#F6B319;
+	border: 0;	
+}
+
+#brand {
+	grid-area: brand;
+	display: flex;
+	justify-content: space-around;
+	/*background-color: lightgreen;*/
+}
+
+#title {
+	/*width: 300px;*/
+	/*background-color: lightblue;*/
+	/*flex-grow: 4;*/
+}
+h1 {
+	font-family: Cursive;
+	font-size: 2.7em;
+	color: #437762FF;
+	
+	/*background-color: red;*/
+}
+#title h2 {
+	color: #7F3300FF;
+	font-size: 1.1em;
+}
+
+#nav-bar {
+	grid-area: navLinks;
+	/*margin-left: 20%;*/
+	/*background-color: red;*/
+	margin-top: 25px;
+	display: flex;
+	justify-content: space-around;
+	padding-right: 1%;
+	/*background-color: hotpink;*/
+}
+#image {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	/*height: 110px;*/
+	/*width: 110px;*/
+	/*border-radius: 50%;*/
+	background-color: #FFF;
+	/*margin-left: 50px;*/
+	padding: 2%;
+	/*align-content: center;*/
+
+}
+
+img {
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+#nav-bar p {
+	text-align: center;
+	margin-left: 15px;
+	height: 30px;
+	flex-basis: 150px;
+	flex-shrink: 1;
+	cursor: pointer;
+	/*background-color: #FFD800FF;*/
+	/*background-color: blue;*/
+	font-size: 1.5em;
+	padding: 1%;
+}
+#nav-bar p:hover {
+	background-color: #7F0037FF;
+}
+/*************************  VIDEO STYLING ************************/
+#video {
+	grid-area: video;
+	display: grid;
+	grid-template-columns: 20% 60% 20%;
+	grid-template-areas: ". iframe .";
+	margin-top: 50px;
+}
+
+#video div {
+	grid-area: iframe;
+	/*background-color: #FFD800FF;*/
+	padding: 1%;
+}
+
+iframe {
+	width: 100%;
+	border: solid black;
+	/*opacity: 0.8;*/
+}
+
+/******************************* FOOTER STYLING ************************/
+
+footer {
+	height: 100px; 
+	background-color: #0E0004;
+	color: #fff;
+	font-size: 1.3em;
+	text-align: center;
+	padding-top: 5%;
+}
+
+/**************************** PRICING STYLING **************************/
+
+#pricing {
+	grid-area: pricing;
+	display: grid;
+	grid-template-columns: 1% 48% 48% 3%;
+	grid-template-rows: 300px 300px;
+	grid-template-areas: ". product1 product2 ."
+						 ". product3 product4 .";
+	grid-column-gap: 0.5%;
+	grid-row-gap: 10px;
+	/*margin-left: 5%;*/
+	/*background-color: gray;*/
+	margin-top: 80px;
+}
+
+.product {
+	/*background-color: yellow;*/
+	display: grid;
+	grid-template-columns: 40% 55%;
+	grid-template-rows: 75% 30%;
+	grid-column-gap: 2%;
+	/*height: 400px;*/
+	border: solid thin #0E0004;
+	/*padding-right: 1%;*/
+}
+.prodct-text , .product-price {
+	margin-right: 2%;
+}
+
+.product-price h3 {
+	color: green;
+	text-align: center;
+	font-size: 2.5em;
+	background-color: silver;
+	opacity: 0.5;
+	margin-top: 5%;
+}
+
+.product-text h2 {
+	color: white;
+	text-align: center;
+	font-size: 2em;
+}
+
+.product-text p {
+	color: white;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+#product1 {
+	grid-area: product1;
+	grid-template-areas: "img1 text1"
+						 "img1 price1";
+}
+#im1 {
+	grid-area: img1;
+}
+#product-text1 {
+	grid-area: text1;
+	/*background-color: yellow;*/
+}
+
+#price1 {
+	grid-area: price1;
+}
+
+	
+#product2 {
+	grid-area: product2;
+	grid-template-areas: "img2 text2"
+						 "img2 price2";
+}
+#im2 {
+	grid-area: img2;
+}
+#product-text2 {
+	grid-area: text2;
+}
+
+#price2 {
+	grid-area: price2;
+	margin-bottom: 1%;
+}
+
+
+/************product3 **************/
+
+#product3 {
+	grid-area: product3;
+	grid-template-areas: "img3 text3"
+						 "img3 price3";
+}
+#im3 {
+	grid-area: img3;
+}
+#product-text3 {
+	grid-area: text3;
+}
+
+
+#price3 {
+	grid-area: price3;
+}
+
+/*************product 4 *****************/
+
+#product4 {
+	grid-area: product4;
+	grid-template-areas: "img4 text4"
+						 "img4 price4";
+}
+#im4 {
+	grid-area: img4;
+}
+#product-text4 {
+	grid-area: text4;
+}
+
+#price4 {
+	grid-area: price4;
+}
+
+
+#form {
+	grid-area: form;
+	display: grid;
+	grid-template-columns: 20% 50% 10% 20%;
+	grid-template-rows: auto auto;
+	grid-template-areas: ". label . ." 
+				   		 ". input submit .";
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+label {
+	grid-area: label;
+	color: #fff;
+	font-size: 1.3em;
+	margin-bottom: 10px;
+}
+input {
+	grid-area: input;
+	height: 40px;
+	width: 100%;
+	font-size: 1.3em;
+	padding: 1%;
+}			
+button {
+	grid-area: submit;
+	border:thin solid green;
+	background-color: #19c660FF;
+	color: #fff;
+	font-size: 1.2em;
+	cursor: pointer;
+}
+
+/************************ MEDIA QUERIES ****************************/
+
+
+						
+
+/************** Medium Devices *********************/
+
+@media (min-width: 768px) and (max-width: 991px) {
+	
+	#product1 {
+		grid-template-areas: "img1 text1"
+							 "price1 text1";
+	}
+	#product2 {
+		grid-template-areas: "img2 text2"
+							 "price2 text2";
+	}
+	#product3 {
+		grid-template-areas: "img3 text3"
+							 "price3 text3";
+	}
+	#product4 {
+		grid-template-areas: "img4 text4"
+							 "price4 text4";
+	}
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+
+    header {
+    	grid-template-rows: 70% 30%;
+    	grid-template-columns: 50% 50%;
+    	grid-template-areas: "logo logo"
+    						 "navLinks navLinks";
+    }
+
+    #brand {
+    	grid-area: logo;
+    	/*background-color: lightblue;*/
+    	/*height: 50%;*/
+    }
+    #image {
+    	height: 50%;
+    }
+    #title {
+    	display: none;
+    }
+
+    #nav-bar {
+    	grid-area: navLinks;
+    	display: flex;
+    	justify-content: space-between;
+    	border-top: 1px solid white;
+    	width: 100%;
+    	/*background-color: blue;*/
+    }
+
+    #pricing {
+    	grid-template-columns: 5% 90% 5%;
+    	grid-template-rows: 400px 400px 400px 400px;
+    	grid-template-areas: ". product1 ."
+    						 ". product2 ."
+    						 ". product3 ."
+    						 ". product4 ."
+    }
+
+    .product {
+    	grid-template-columns: 30% 70%;
+    	grid-template-rows: 60% 40%;
+    }
+
+    #product1 {
+    	grid-template-areas: ". img1"
+    						 "price1 text1";
+    }
+    #product2 {
+    	grid-template-areas: ". img2"
+    						 "price2 text2";
+    }
+    #product3 {
+    	grid-template-areas: ". img3"
+    						 "price3 text3";
+    }
+    #product4 {
+    	grid-template-areas: ". img4"
+    						 "price4 text4";
+    }
+
+    img {
+    	height: 200px;
+    	width: 200px;
+    }
+
+    label, input {
+		font-size: 1em;
+    }
+    button {
+    	font-size: 0.7em;
+    }
+    iframe {
+    	height: 200px;
+    }
+}
+    
+
+
+   
+    
